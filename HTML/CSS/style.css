@@ -1,0 +1,16 @@
+h2{
+    background-color: pink;
+    color: blue;
+}
+
+/* This is for class */
+.hello_class{
+    border: 2px solid black;
+}
+
+/* This is for id */
+#hello_id{
+    background-color: magenta;
+    color: blue;
+    border: 10px solid greenyellow;
+}
