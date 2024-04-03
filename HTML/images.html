@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body>
+    <h2>Static Image using the Img Element</h2>
+    <a href="https://www.w3schools.com/html/html_images.asp">
+      <img
+        src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png"
+        alt="HTML Image"
+      />
+    </a>
+    <br><br>
+    <h2>Responsive Images using the Picture Element</h2>
+
+    <picture>
+        <!-- Provide multiple source elements for different image formats and resolutions -->
+        <source media="(min-width: 1024px)" srcset="https://via.placeholder.com/800x400">
+        <source media="(min-width: 768px)" srcset="https://via.placeholder.com/600x300">
+        <source srcset="https://via.placeholder.com/400x200">
+        <!-- Fallback image if none of the sources match -->
+        <img src="https://via.placeholder.com/800x400" alt="Responsive Image">
+    </picture>
+  </body>
+</html>
