@@ -1,0 +1,12 @@
+h1{
+    color: orange;
+    border: 2px solid red;
+}
+h2{
+    color: rgb(rgb(171, 62, 62), rgb(81, 203, 81), rgb(87, 87, 173));
+    border: 1px solid blue;
+}
+h3{
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid green;
+}
