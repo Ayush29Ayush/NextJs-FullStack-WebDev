@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .gridContainer{
+            height: 250px;
+            width: 750px;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: 150px 150px 150px; */
+            /* grid-template-columns: 1fr 2fr 4fr; fr means frame */
+            grid-template-columns: repeat(4,1fr); /*fr means frame*/
+            /* grid-template-rows: 150px 10px 150px 10px; */
+            /* overflow: scroll; */
+            grid-gap: 10px;
+            /* column-gap: 20px;
+            row-gap: 30px; */
+        }
+        .box1{
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-row-end: 4;
+            grid-column-end: 3;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="box box1" style="background-color: red" >1</div>
+        <div class="box" style="background-color: orange">2</div>
+        <div class="box" style="background-color: blueviolet">3</div>
+        <div class="box" style="background-color: greenyellow">4</div>
+        <div class="box" style="background-color: blue">5</div>
+        <div class="box" style="background-color: burlywood">6</div>
+        <div class="box" style="background-color: cadetblue">7</div>
+    </div>
+</body>
+</html>
