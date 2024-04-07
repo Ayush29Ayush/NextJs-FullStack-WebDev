@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox</title>
+    <style>
+        .container{
+            border: 5px solid #000;
+            border-radius: 10px;
+            background-color: rgb(45, 44, 44);
+            width: 500px;
+            height: 400px;
+
+            /* ----flex properties---- */
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: baseline; */
+            flex-wrap: wrap;
+            /* align-content: center;
+            align-content: space-around;
+            align-content: space-between; */
+        }
+        .box{
+            border: 5px solid orange;
+            border-radius: 5px;
+            background-color: aqua;
+            height: 50px;
+            width: 50px;
+            margin: 2px;
+
+        }
+        .box1{
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Display: Flex</h1>
+    <div class="container" id="flex">
+        <div class="box box1">
+            <h2>1</h2>
+        </div>
+        <div class="box box2">
+            <h2>2</h2>
+        </div>
+        <div class="box box3">
+            <h2>3</h2>
+        </div>
+        <div class="box box4">
+            <h2>4</h2>
+        </div>
+        <div class="box box5">
+            <h2>5</h2>
+        </div>
+        <div class="box box6">
+            <h2>6</h2>
+        </div>
+        <div class="box box7">
+            <h2>7</h2>
+        </div>
+        <div class="box box8">
+            <h2>8</h2>
+        </div>
+        <div class="box box9">
+            <h2>9</h2>
+        </div>
+    </div>
+        
+</body>
+</html>
