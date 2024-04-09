@@ -3,3 +3,5 @@
 3. Read docs of Tailwind CSS.
 4. Read docs of Shadcn UI and Flowbite Tailwind CSS for components and learn how to use them.
 ------------------------------------------------------------------------------------------------
+
+1. Go to "https://tailwindcss.com/docs/installation/using-postcss" where we want to do installation using PostCSS, then follow that steps to add tailwindcss to your project.
