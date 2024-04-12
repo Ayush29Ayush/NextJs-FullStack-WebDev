@@ -5,3 +5,8 @@
 ------------------------------------------------------------------------------------------------
 
 1. Go to "https://tailwindcss.com/docs/installation/using-postcss" where we want to do installation using PostCSS, then follow that steps to add tailwindcss to your project.
+2. Do code cleaning and remove all unnecessary code.
+3. Type rafce to get basic template for each component.
+4. Go through tailwindcss docs.
+5. 1 rem = 16px.
+6. In tailwindcss, 1 means 4px so p-1 = padding: 4px;
