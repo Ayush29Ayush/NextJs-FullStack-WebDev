@@ -10,3 +10,7 @@
 4. Go through tailwindcss docs.
 5. 1 rem = 16px.
 6. In tailwindcss, 1 means 4px so p-1 = padding: 4px;
+7. All assets should be placed inside public folder.
+8. Install React Icons.
+9. Import Lato and playfair fonts in index.css file from src folder.
+10. Go to tailwind.config.js and extend fontFamily with Lato and Playfair fonts.
