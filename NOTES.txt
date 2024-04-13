@@ -14,3 +14,8 @@
 8. Install React Icons.
 9. Import Lato and playfair fonts in index.css file from src folder.
 10. Go to tailwind.config.js and extend fontFamily with Lato and Playfair fonts.
+11. NOTE - tailwind code in index.css should always be on top otherwise tailwind css will not work.
+
+12. Use sm,md,lg for building responsive designs
+13. Learn about flex and flex-1 property
+14. Learn about order property
