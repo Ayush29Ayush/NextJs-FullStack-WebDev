@@ -19,3 +19,18 @@
 12. Use sm,md,lg for building responsive designs
 13. Learn about flex and flex-1 property
 14. Learn about order property
+
+15. var:
+a) Function-scoped: Variables declared with var are scoped to the nearest function, not necessarily the block in which they are declared. This can lead to unexpected behavior and potential bugs when using variables across different blocks.
+b) Hoisting: var variables are hoisted to the top of their scope, meaning you can access them before their declaration. However, they will be undefined until their actual declaration in the code execution.
+c) Reassignment and Redefinition: var variables can be both reassigned and redeclared within the same scope, which can sometimes lead to unintended consequences and make the code harder to reason about.
+
+16. let:
+a) Block-scoped: Variables declared with let are scoped to the nearest enclosing block, such as a loop, conditional, or function. This helps in preventing accidental variable leakage and promotes better code organization.
+b) No Hoisting: Unlike var, let variables are not hoisted to the top of their scope. Accessing them before their declaration results in a ReferenceError, making the code behavior more predictable.
+c) Reassignment, No Redefinition: let variables can be reassigned within the same scope, but they cannot be redeclared. This enforces clarity and prevents accidental shadowing of variables within the same block.
+
+17. const:
+a) Block-scoped: Similar to let, variables declared with const are block-scoped, meaning they are only accessible within the block in which they are defined.
+b) No Hoisting: const variables are not hoisted, and accessing them before their declaration results in a ReferenceError, just like with let.
+c) Immutable Value: Unlike var and let, const variables must be initialized upon declaration, and their value cannot be changed once assigned. This immutability ensures that the variable's value remains constant throughout its scope, enhancing code predictability and safety.
