@@ -34,3 +34,8 @@ c) Reassignment, No Redefinition: let variables can be reassigned within the sam
 a) Block-scoped: Similar to let, variables declared with const are block-scoped, meaning they are only accessible within the block in which they are defined.
 b) No Hoisting: const variables are not hoisted, and accessing them before their declaration results in a ReferenceError, just like with let.
 c) Immutable Value: Unlike var and let, const variables must be initialized upon declaration, and their value cannot be changed once assigned. This immutability ensures that the variable's value remains constant throughout its scope, enhancing code predictability and safety.
+
+17. Always try to use const and let and miniimize use of var for better code quality and maintainability.
+
+18. INTERVIEW QUES -> Difference between var, let and const
+19. INTERVIEW QUES -> WHat is the datatype of null and undefined in JS?
