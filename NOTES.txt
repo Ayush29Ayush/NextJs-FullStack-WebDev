@@ -40,3 +40,7 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 18. INTERVIEW QUES -> Difference between var, let and const
 19. INTERVIEW QUES -> WHat is the datatype of null and undefined in JS?
 20. == means equal to and === means strict equal to. For example, 0 == false and 0 === false.
+
+21. INTERVIEW QUES -> What is the difference between == and ===?
+22. console.log("2 x " + i + " = " + (2*i)); is just a string concatenation.
+    console.log(`2 x ${i} = ${2*i}`); is a template string literal.
