@@ -44,3 +44,7 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 21. INTERVIEW QUES -> What is the difference between == and ===?
 22. console.log("2 x " + i + " = " + (2*i)); is just a string concatenation.
     console.log(`2 x ${i} = ${2*i}`); is a template string literal.
+
+23. All array related concepts are added in arrays.js
+24. JS is synchronous in nature but can be made asynchronous with the help of asynchronous methods like setTimeout, callback function, Promises, async/await.
+25. Refer js file named "async_await_promises_timeout_callback.js"
