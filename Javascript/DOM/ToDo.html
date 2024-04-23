@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .done {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="write" />
+      <ul id="todo-list" style="list-style-type: none"></ul>
+    </div>
+    <script>
+      let write = document.getElementById("write");
+      let todoList = document.getElementById("todo-list");
+
+      write.addEventListener("keydown", (event) => {
+        if (event.key == "Enter") {
+          //   console.log(write.value);
+          //   todoList.innerHTML = write.value;
+          addTodo(write.value);
+          write.value = "";
+        }
+      });
+
+      function addTodo(todo) {
+        console.log(todo);
+        let list = document.createElement("li");
+        list.innerHTML = todo;
+        todoList.appendChild(list);
+
+        list.addEventListener("click", () => {
+        //   list.remove();
+          list.classList.toggle("done");
+        });
+      }
+    </script>
+  </body>
+</html>
