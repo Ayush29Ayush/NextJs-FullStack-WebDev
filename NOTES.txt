@@ -49,4 +49,5 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 24. JS is synchronous in nature but can be made asynchronous with the help of asynchronous methods like setTimeout, callback function, Promises, async/await.
 25. Refer js file named "async_await_promises_timeout_callback.js"
 26. Refer js file named "Objects,Object_inside_Array,Function_inside_Function,Lexical_Scope,This_keyword,New_and_Symbol.js"
-27. refer js file named "proto,prototype,class.js". Main is the usage of class here.
+27. Refer js file named "proto,prototype,class.js". Main is the usage of class here.
+28. Refer DOM folder for DOM related concepts.
