@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS practice</title>
     <style>
-        #myDiv{
-            height: 100px;
-            width: 100px;
-            background-color: aquamarine;
-            border: 2px solid black;
-            border-radius: 20px;
-        }
+      #myDiv {
+        height: 100px;
+        width: 100px;
+        background-color: aquamarine;
+        border: 2px solid black;
+        border-radius: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Hello</h1>
-    <div id="myDiv"></div>
-    <button onclick="changeColor()">Change Color</button>
     <!-- <script src="index1.js"></script> -->
     <!-- <script src="func_array.js"></script> -->
     <!-- <script src="variables_datatypes_operators.js"></script> -->
@@ -27,6 +25,17 @@
     <!-- <script src="async_await_promises_settimeout_callback.js"></script> -->
     <!-- <script src="Objects,Object_inside_Array,Function_inside_Function,Lexical_Scope,This_keyword,New_and_Symbol.js"></script> -->
     <!-- <script src="proto,prototype,class.js"></script> -->
-    <script src="DOM/onClick.js"></script>
-</body>
+
+    <!-- <div id="myDiv"></div>
+    <button onclick="changeColor()">Change Color</button>
+    <script src="DOM/onClick.js"></script> -->
+
+    <form action="" onsubmit="onSubmitfunc()">
+      Your email id :
+      <input type="email" id="input" onfocus="onfocusfunc()" onblur="onblurfunc()" onselect="onselectfunc()" required/>
+      <input type="submit">
+    </form>
+
+    <script src="DOM/forms.js"></script>
+  </body>
 </html>
