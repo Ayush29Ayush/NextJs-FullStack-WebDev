@@ -51,3 +51,4 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 26. Refer js file named "Objects,Object_inside_Array,Function_inside_Function,Lexical_Scope,This_keyword,New_and_Symbol.js"
 27. Refer js file named "proto,prototype,class.js". Main is the usage of class here.
 28. Refer DOM folder for DOM related concepts.
+29. Selectors in DOM => getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll
