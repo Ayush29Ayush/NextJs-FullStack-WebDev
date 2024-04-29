@@ -59,3 +59,7 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 3. Create a component named App.js, A should be capital as it is a component.
 4. components are created so that we can reuse them in different places.
 5. Type rafce or rfce to get basic template for each component.
+6. JSX is a syntax extension for JavaScript that looks similar to XML or HTML, allowing you to write React components using a familiar markup style. While JavaScript (JS) is a programming language, JSX is a syntax that allows you to write HTML-like code within JavaScript. The main difference is that JSX gets transformed into JavaScript before it is interpreted by the browser.
+7. Any variable's value can be displayed inside a fragment of the compoonent if we enclose it in curly braces i.e {}.
+8. Create a App.css file and add all the css code inside it. These styles can be used by importing it in App.js file.
+9. Another way to add styling is to use style tag. Ex => <div style={{color:"red"}}>Hello World</div>
