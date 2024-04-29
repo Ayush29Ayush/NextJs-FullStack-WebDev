@@ -52,3 +52,7 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 27. Refer js file named "proto,prototype,class.js". Main is the usage of class here.
 28. Refer DOM folder for DOM related concepts.
 29. Selectors in DOM => getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll
+
+# React
+1. npx create-react-app my-app
+2. Remove all unnecessary code and run npm start
