@@ -63,3 +63,7 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 7. Any variable's value can be displayed inside a fragment of the compoonent if we enclose it in curly braces i.e {}.
 8. Create a App.css file and add all the css code inside it. These styles can be used by importing it in App.js file.
 9. Another way to add styling is to use style tag. Ex => <div style={{color:"red"}}>Hello World</div>
+10. Components can be made dynamic by using props. Ex => <h1>Hello {props.name}</h1>
+11. props can be passed as an object or as an array of objects.
+12. We can use props by props.name or we can destructure the props and use the attribute directly.
+13. We can use array of objects as props and then use map function, for loop and forEach function to pass the objects in the array or the json array to the component one at a time.
