@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import "./App.css";
 
 function App() {
+  let a = 2;
   return (
-    <h1>App</h1>
-  )
+    <div>
+      {/* The value of a is a */}
+      The value of a is {a}
+      <br />
+      Adding {a}+2 = {a + 2}
+      <h1 className="main">App</h1>
+      <p style={{ color: "white", backgroundColor: "black" }}>This is a para</p>
+    </div>
+  );
 }
 
 export default App;
