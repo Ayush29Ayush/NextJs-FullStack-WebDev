@@ -56,3 +56,6 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 # React
 1. npx create-react-app my-app
 2. Remove all unnecessary code and run npm start
+3. Create a component named App.js, A should be capital as it is a component.
+4. components are created so that we can reuse them in different places.
+5. Type rafce or rfce to get basic template for each component.
