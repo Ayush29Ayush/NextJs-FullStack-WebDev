@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px; /* Optional: Set height to 100px if needed */
+  border: 1px solid #ccc; /* Optional: Add border for visualization */
+}
+
+.content {
+  text-align: center; /* Optional: Center align content horizontally */
+}
+
+button {
+  margin-bottom: 10px;
+}
