@@ -74,4 +74,10 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 
 16. Using filter, we can create a new array with elements that pass a certain condition. This acts as removing the element from the overall data whose id is passed to the function. Ex => const filteredArray = arr.filter((item)=> item.id === id); Check Data.js file
 17. Using map, we can create a new array by transforming each element in the original array. This acts as changing any field of any particular element whose id is passed to the function. Check Data.js file
+
+
+# HOOKS - useState
 18. See difference between "Multiple States with Multiple Inputs States" and "Multiple States with Single Inputs States" in Form.js file
+
+# HOOKS - useEffect
+19. useEffect is used to execute the code when a specific event happens like getting the loading animation, clicking on a button, changing state of a component etc.
