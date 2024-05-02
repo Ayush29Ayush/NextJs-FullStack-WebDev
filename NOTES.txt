@@ -81,3 +81,4 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 
 # HOOKS - useEffect
 19. useEffect is used to execute the code when a specific event happens like getting the loading animation, clicking on a button, changing state of a component etc.
+20. If you add a return statement inside a useEffect, it will act as a clean state of the component. Check useEffect.js file
