@@ -26,10 +26,21 @@ const REACT_USE_EFFECT = () => {
   //   alert(clicked_button);
   // }, [clicked_button]);
 
+  //! Show alert only when clicked_button or count is changed
+  // useEffect(() => {
+  //   console.log(
+  //     `You have clicked ${clicked_button} or count was updated to ${count}`
+  //   );
+  // }, [clicked_button, count]);
+
+  //! Example of CLEAN UP
+  // Here we can observe that when the dependency changes, the return statement is called first and then the useEffect code is called
   useEffect(() => {
-    console.log(
-      `You have clicked ${clicked_button} or count was updated to ${count}`
-    );
+    console.log("Either clicked_button or count was updated");
+
+    return () => {
+      console.log("Clean up return statement...");
+    };
   }, [clicked_button, count]);
 
   return (
