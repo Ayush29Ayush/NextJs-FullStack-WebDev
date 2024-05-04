@@ -90,10 +90,15 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 24. Check Fetch.js file to see how to use FetchAPI with useEffect hook.
 25. Check MultipleReturn.js file to see how to get data from API using FetchAPI along with try catch error handling. We have also used async await along with useState for loaders and errors.
 
-# CONTEXT API
+# CONTEXT API - useContext
 26. Read this => https://medium.com/javascript-in-plain-english/how-to-manage-state-with-usereducer-and-context-api-3f0ea40a3ac3
 27. Without context api, if we want to pass data from parent to child component, we have to pass it in the form of props. This is not the best way to do it. We can use context api.
 28. The parent component will use useContext.Provider to pass the data to the child component. The child component will use useContext.Consumer to get the data from the parent component. 
 29. <GreetContext.Provider value={greet}><div></div></GreetContext.Provider> when there is only one value to be passed. <GreetContext.Provider value={{greet,greet2}}><div></div></GreetContext.Provider> when there are multiple values to be passed.
 30. Rather than creating nested useContext.Consumer, we can use useContext hook in the child component. Ex => const useCon = useContext(GreetContext);
 31. Access the data using useCon. Ex => useCon.greet and useCon.greet2.
+
+# CONTEXT API - useReducer
+32. Similar to useState
+33. Reducer function is a pure function and has 2 parameters, state and action
+34. Reducer is the coffee maker, state is the coffee powder and action is the milk. New state is returned which is the coffee.
