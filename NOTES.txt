@@ -102,3 +102,10 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 32. Similar to useState
 33. Reducer function is a pure function and has 2 parameters, state and action
 34. Reducer is the coffee maker, state is the coffee powder and action is the milk. New state is returned which is the coffee.
+35. Refer useReducer.js file
+36. Refer useReducerExample.js file
+
+# IMPORTANT
+37. Best combo for dynamic state management => use useReducer and useContext
+38. Define a initial state and then define a reducer function to handle state management changes.
+39. Then use useContext to pass the state from one component to another.
