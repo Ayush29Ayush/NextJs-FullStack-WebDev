@@ -115,3 +115,7 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 41. For example check UseRefEx.js file
 42. When we used const [count, setCount] = React.useState(0); and updated the count value, the console.log("The component have been rendered..."); in the useEffect got called everytime due to re-rendering but when we used const count = React.useRef(0); and updated the count value, the console.log("The component have been rendered..."); in the useEffect got called only once. Refer UseRefEx2.js file
 43. useRef helps us update the value of a state variable without unnecessary re-rendering.
+
+# REACT ROUTER
+44. The 3 main components of React Router => import { BrowserRouter, Routes, Route } from "react-router-dom";
+45. First comes the BrowserRouter and then Routes and then Route.
