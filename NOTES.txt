@@ -90,7 +90,7 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 24. Check Fetch.js file to see how to use FetchAPI with useEffect hook.
 25. Check MultipleReturn.js file to see how to get data from API using FetchAPI along with try catch error handling. We have also used async await along with useState for loaders and errors.
 
-# CONTEXT API - useContext
+# HOOKS - CONTEXT API - useContext
 26. Read this => https://medium.com/javascript-in-plain-english/how-to-manage-state-with-usereducer-and-context-api-3f0ea40a3ac3
 27. Without context api, if we want to pass data from parent to child component, we have to pass it in the form of props. This is not the best way to do it. We can use context api.
 28. The parent component will use useContext.Provider to pass the data to the child component. The child component will use useContext.Consumer to get the data from the parent component. 
@@ -98,14 +98,18 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 30. Rather than creating nested useContext.Consumer, we can use useContext hook in the child component. Ex => const useCon = useContext(GreetContext);
 31. Access the data using useCon. Ex => useCon.greet and useCon.greet2.
 
-# CONTEXT API - useReducer
+# HOOKS - CONTEXT API - useReducer
 32. Similar to useState
 33. Reducer function is a pure function and has 2 parameters, state and action
 34. Reducer is the coffee maker, state is the coffee powder and action is the milk. New state is returned which is the coffee.
 35. Refer useReducer.js file
 36. Refer useReducerExample.js file
 
-# IMPORTANT
+#! IMPORTANT
 37. Best combo for dynamic state management => use useReducer and useContext
 38. Define a initial state and then define a reducer function to handle state management changes.
 39. Then use useContext to pass the state from one component to another.
+
+# HOOKS - useRef
+40. The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated.
+41. For example check UseRefEx.js file
