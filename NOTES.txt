@@ -119,3 +119,4 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 # REACT ROUTER
 44. The 3 main components of React Router => import { BrowserRouter, Routes, Route } from "react-router-dom";
 45. First comes the BrowserRouter and then Routes and then Route.
+46. Use the Link component to navigate between pages. Ex => <Link to="/about">About</Link>
