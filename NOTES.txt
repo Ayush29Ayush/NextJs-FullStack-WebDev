@@ -120,3 +120,7 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 44. The 3 main components of React Router => import { BrowserRouter, Routes, Route } from "react-router-dom";
 45. First comes the BrowserRouter and then Routes and then Route.
 46. Use the Link component to navigate between pages. Ex => <Link to="/about">About</Link>
+
+# FORM VALIDATION
+47. Refer FormVal.js file to see how to use form validation using useState.
+48. Refer FormValReactHookForms.js file to see how to use form validation using React Hook Forms.
