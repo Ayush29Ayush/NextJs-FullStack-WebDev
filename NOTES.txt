@@ -35,7 +35,10 @@ a) Block-scoped: Similar to let, variables declared with const are block-scoped,
 b) No Hoisting: const variables are not hoisted, and accessing them before their declaration results in a ReferenceError, just like with let.
 c) Immutable Value: Unlike var and let, const variables must be initialized upon declaration, and their value cannot be changed once assigned. This immutability ensures that the variable's value remains constant throughout its scope, enhancing code predictability and safety.
 
-17. Always try to use const and let and miniimize use of var for better code quality and maintainability.
+17. Always try to use const and let and minimize use of var for better code quality and maintainability.
+
+INTERVIEW QUES => What are the different types of scopes in JavaScript?
+Ans) Block scope, function scope, global scope, script scope and module scope
 
 18. INTERVIEW QUES -> Difference between var, let and const
 19. INTERVIEW QUES -> WHat is the datatype of null and undefined in JS?
@@ -54,13 +57,13 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 29. Selectors in DOM => getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll
 
 # React
-1. npx create-react-app my-app
+1. npx create-react-app my-app .
 2. Remove all unnecessary code and run npm start
 3. Create a component named App.js, A should be capital as it is a component.
 4. components are created so that we can reuse them in different places.
 5. Type rafce or rfce to get basic template for each component.
 6. JSX is a syntax extension for JavaScript that looks similar to XML or HTML, allowing you to write React components using a familiar markup style. While JavaScript (JS) is a programming language, JSX is a syntax that allows you to write HTML-like code within JavaScript. The main difference is that JSX gets transformed into JavaScript before it is interpreted by the browser.
-7. Any variable's value can be displayed inside a fragment of the compoonent if we enclose it in curly braces i.e {}.
+7. Any variable's value can be displayed inside a fragment of the component if we enclose it in curly braces i.e {}.
 8. Create a App.css file and add all the css code inside it. These styles can be used by importing it in App.js file.
 9. Another way to add styling is to use style tag. Ex => <div style={{color:"red"}}>Hello World</div>
 10. Components can be made dynamic by using props. Ex => <h1>Hello {props.name}</h1>
@@ -69,28 +72,100 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 13. We can use array of objects as props and then use map function, for loop and forEach function to pass the objects in the array or the json array to the component one at a time.
 14. In react, we use useState hook to manage the state of the component. Ex => const [count,setCount] = useState(0); where count is the state and setCount is the function to set the state.
 15. filter() and map() are used to manipulate the array. They run over each item in each iteration.
-.filter is used to create a new array with elements that pass a certain condition.
+.filter is used to create a new array with elements that pass a certain condition. It works on the basis of boolean values provided by running the condition i.e true or false.
+"<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Click "Test" to get every element in the array that has a value above this number:</p>
+
+<p><input type="number" id="ageToCheck" value="30"></p>
+<button onclick="myFunction()">Test</button>
+
+<p id="demo"></p>
+
+<script>
+const ages = [32, 33, 12, 40];
+
+function checkAge(age) {
+  return age > document.getElementById("ageToCheck").value;
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.filter(checkAge);
+}
+</script>
+
+</body>
+</html>"
+
 .map is used to create a new array by transforming each element in the original array.
+#! .map using Normal Function
+"
+const numbers = [65, 44, 12, 4];
+const newArr = numbers.map(myFunction)
+
+function myFunction(num) {
+  return num * 10;
+}
+"
+#! .map using Arrow Function
+"
+* let myFunction = (a, b) => a * b;
+"
+"
+fetch('https://restcountries.com/v3.1/all')
+      .then((response) => {
+        if (response.ok) return response.json();
+      })
+      .then((data) => {
+        const countryNamess = data.map((country) => country.name.common);
+        setCountries(countryNamess);
+      })
+      .catch((error) => console.error(error));
+"
 
 16. Using filter, we can create a new array with elements that pass a certain condition. This acts as removing the element from the overall data whose id is passed to the function. Ex => const filteredArray = arr.filter((item)=> item.id === id); Check Data.js file
 17. Using map, we can create a new array by transforming each element in the original array. This acts as changing any field of any particular element whose id is passed to the function. Check Data.js file
 
 
-# HOOKS - useState
+# HOOKS - useState (React/02)
 18. See difference between "Multiple States with Multiple Inputs States" and "Multiple States with Single Inputs States" in Form.js file
 
-# HOOKS - useEffect
+# HOOKS - useEffect (React/03)
 19. useEffect is used to execute the code when a specific event happens like getting the loading animation, clicking on a button, changing state of a component etc.
 20. If you add a return statement inside a useEffect, it will act as a clean state of the component. Check useEffect.js file
 
-# FETCH using useEffect
+# FETCH using useEffect (React/03)
 21. https://api.github.com/ => List of free API from GitHub
 22. We will be using https://api.github.com/users/ => List of users
 23. You can also use "https://freeapi.app/" from Hitesh Choudhary.
 24. Check Fetch.js file to see how to use FetchAPI with useEffect hook.
 25. Check MultipleReturn.js file to see how to get data from API using FetchAPI along with try catch error handling. We have also used async await along with useState for loaders and errors.
+'''
+useEffect(() => {
+  fetch("https://api.github.com/users")
+    .then((response) => {
+      // Check if the response was successful
+      if (response.ok) {
+        return response.json(); // Proceed to parse JSON if the response is OK
+      } else {
+        throw new Error('Network response was not ok'); // Throw an error if the response is not OK
+      }
+    })
+    .then((json_data) => {
+      setUsers(json_data); // Set users state with the parsed JSON data
+    })
+    .catch((error) => {
+      console.error('There has been a problem with your fetch operation:', error);
+    });
+}, []);
+'''
 
-# HOOKS - CONTEXT API - useContext
+# HOOKS - CONTEXT API - useContext (React/04)
 26. Read this => https://medium.com/javascript-in-plain-english/how-to-manage-state-with-usereducer-and-context-api-3f0ea40a3ac3
 27. Without context api, if we want to pass data from parent to child component, we have to pass it in the form of props. This is not the best way to do it. We can use context api.
 28. The parent component will use useContext.Provider to pass the data to the child component. The child component will use useContext.Consumer to get the data from the parent component. 
@@ -98,7 +173,7 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 30. Rather than creating nested useContext.Consumer, we can use useContext hook in the child component. Ex => const useCon = useContext(GreetContext);
 31. Access the data using useCon. Ex => useCon.greet and useCon.greet2.
 
-# HOOKS - CONTEXT API - useReducer
+# HOOKS - CONTEXT API - useReducer (React/05)
 32. Similar to useState
 33. Reducer function is a pure function and has 2 parameters, state and action
 34. Reducer is the coffee maker, state is the coffee powder and action is the milk. New state is returned which is the coffee.
@@ -109,6 +184,59 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 37. Best combo for dynamic state management => use useReducer and useContext
 38. Define a initial state and then define a reducer function to handle state management changes.
 39. Then use useContext to pass the state from one component to another.
+'''
+import React, { useState } from "react";
+
+const initialState = {counter: 0};
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "increment":
+      return { counter: state.counter + 1 };
+    case "decrement":
+      return { counter: state.counter - 1 };
+    case "reset":
+      return initialState;
+    default:
+      return state;
+  }
+};
+
+const UseReducer = () => {
+  //! using useState hook
+  const [count, setCount] = useState(0); 
+
+  //! using useReducer hook
+  const [state, dispatch] = React.useReducer(reducer, initialState);
+  const increment = () => {
+    dispatch({ type: "increment" });
+  };
+
+  const decrement = () => {
+    dispatch({ type: "decrement" });
+  };
+
+  const reset = () => {
+    dispatch({ type: "reset" });
+  };
+
+  return (
+    <div>
+      <h1>useReducer_Script</h1>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count+1)}>Plus</button>
+      <button onClick={() => setCount(count-1)}>Minus</button>
+      <h1>-----------------</h1>
+      <h1>{state.counter}</h1>
+      <button onClick={reset}>Reset</button>
+      <button onClick={increment}>increment</button>
+      <button onClick={decrement}>decrement</button>
+    </div>
+  );
+};
+
+export default UseReducer;
+'''
 
 # HOOKS - useRef
 40. The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated.
@@ -124,3 +252,29 @@ c) Immutable Value: Unlike var and let, const variables must be initialized upon
 # FORM VALIDATION
 47. Refer FormVal.js file to see how to use form validation using useState.
 48. Refer FormValReactHookForms.js file to see how to use form validation using React Hook Forms.
+
+#! Youtube Clone
+1. cd youtube-clone
+2. npx create-react-app .
+3. Go to "https://tailwindcss.com/docs/installation/using-postcss" and follow that steps to add tailwindcss to your project.
+"
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+"
+Add this to index.css
+"
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+"
+Add these to your tailwind.config.js
+"
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+"
