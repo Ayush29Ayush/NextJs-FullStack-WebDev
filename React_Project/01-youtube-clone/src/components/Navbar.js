@@ -20,7 +20,7 @@ const Navbar = () => {
           <span className="text-2xl font-bold">Youtube</span>
         </div>
       </div>
-      {/* middle */}
+      {/* middle portion */}
       <div className="flex items-center justify-center gap-5">
         <form action="">
           <div className="flex bg-zinc-900 items-center h-10 px-4 pr-2 rounded-3xl">
