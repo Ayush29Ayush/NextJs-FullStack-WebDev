@@ -238,11 +238,12 @@ const UseReducer = () => {
 export default UseReducer;
 '''
 
-# HOOKS - useRef
+# HOOKS - useRef (React/06)
 40. The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated.
 41. For example check UseRefEx.js file
 42. When we used const [count, setCount] = React.useState(0); and updated the count value, the console.log("The component have been rendered..."); in the useEffect got called everytime due to re-rendering but when we used const count = React.useRef(0); and updated the count value, the console.log("The component have been rendered..."); in the useEffect got called only once. Refer UseRefEx2.js file
 43. useRef helps us update the value of a state variable without unnecessary re-rendering.
+44. It also helps to change attributes of a particular DOM element without re-rendering the entire component. Refer UseRefEx3.js file
 
 # REACT ROUTER
 44. The 3 main components of React Router => import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -252,6 +253,12 @@ export default UseReducer;
 # FORM VALIDATION
 47. Refer FormVal.js file to see how to use form validation using useState.
 48. Refer FormValReactHookForms.js file to see how to use form validation using React Hook Forms.
+
+--------------------------------------------------
+
+#! React Quick Revision
+* https://www.youtube.com/watch?v=E8lXC2mR6-k => Master React JS in easy way
+* https://www.youtube.com/watch?v=wIyHSOugGGw => Every React Concept Explained in 12 Minutes
 
 --------------------------------------------------
 
